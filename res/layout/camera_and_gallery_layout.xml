@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.5dip"
+        android:layout_marginLeft="12.5dip"
+        android:layout_marginRight="15dip">
+    
+		<ImageView 
+		    android:id="@+id/camera_icon"
+		    android:layout_width="80dip"
+		    android:layout_height="90dip"
+		    android:clickable="true" 
+		    android:background="@drawable/camera_widget_icon"/>
+		
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/mms_camera_icon_text"
+		    android:textColor="@android:color/black"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="50dip"/>
+	
+	</FrameLayout>
+	
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.5dip"
+        android:layout_gravity="center_horizontal">
+	
+		<ImageView 
+		    android:id="@+id/gallery_icon"
+		    android:layout_width="80dip"
+		    android:layout_height="90dip"
+		    android:clickable="true"
+		    android:background="@drawable/gallery_widget_icon"/>
+		
+		<TextView 
+		    android:layout_width="50dip"
+		    android:layout_height="wrap_content"
+		    android:text="@string/mms_gallery_icon_text"
+		    android:textColor="@android:color/black"
+		    android:gravity="center_horizontal"
+		    android:layout_gravity="center_horizontal"
+		    android:layout_marginTop="42.5dip"/>
+	
+	</FrameLayout>
+
+</LinearLayout>

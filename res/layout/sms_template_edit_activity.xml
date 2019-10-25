@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!--
+    ! Excerpted from "Hello, Android!", ! published by The Pragmatic Bookshelf. ! Copyrights apply to this code. It may
+    not be used to create training material, ! courses, books, articles, and the like. Contact us if you are in doubt. !
+    We make no guarantees that this code is fit for any purpose. ! Visit http://www.pragmaticprogrammer.com/titles/eband
+    for more book information.
+  -->
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@android:drawable/iphone_activity_bg"
+  android:orientation="vertical"
+  >
+  <!-- Note built-in ids for 'list' and 'empty' -->
+    	<!-- begin add by xujia for bug[] -->
+<RelativeLayout 
+	android:id="@+id/header_layout" android:layout_width="match_parent"
+	android:layout_height="38dip" android:layout_gravity="center"
+	android:orientation="vertical" android:background="@android:drawable/header_bg">
+
+	<Button android:id="@+id/back_settings_btn" style="@android:style/IPhone_Left_Arrow_Shape_Button_Style"
+		android:layout_width="wrap_content" android:layout_height="44dp"
+		 android:singleLine="true"
+		android:maxWidth="120dip" android:ellipsize="end"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true" 
+		android:textSize="15dip"
+		android:textColor="@drawable/iphone_blue_color"
+	    android:text="@string/app_label"/>
+
+	<TextView style="@android:style/Header_TextView_Style" android:id="@+id/header_textview"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:gravity="center" android:layout_centerVertical="true"
+		android:text="@string/quick_text_editor"/>
+
+</RelativeLayout>
+      <!-- end by xujia    delete android:divider="@drawable/divider_horizontal" -->
+  	<ListView      android:id="@+id/quick_text_list" 
+		android:layout_width="match_parent" 
+		android:layout_height="0dip"
+		android:cacheColorHint="#00000000" 
+		android:layout_weight="1">
+	</ListView>
+
+  <View android:background="?android:attr/dividerHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height=".9dp" />
+
+  <LinearLayout 
+      android:id="@+id/LinearLayout02" 
+      android:layout_width="match_parent" 
+      android:background="#fff"
+      android:layout_gravity="bottom"
+      android:layout_height="wrap_content">
+      <EditText 
+          android:id="@+id/new_quick_text" 
+          android:layout_gravity="left" 
+          android:layout_width="match_parent" 
+          android:layout_weight="1" 
+          android:typeface="normal" 
+          android:hint="@string/type_to_compose_text_or_leave_blank" 
+          android:layout_height="wrap_content"
+          android:maxLength="128"/>
+      <Button 
+          android:id="@+id/quickText_add_button" 
+          android:text="@string/add" 
+          android:layout_gravity="right|bottom"
+          android:layout_width="match_parent" 
+          android:layout_weight="5" 
+          android:textSize="18dip"
+          android:layout_height="fill_parent"/>
+  </LinearLayout>
+</LinearLayout>

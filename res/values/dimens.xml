@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc.
+All Rights Reserved. -->
+<resources>
+    <dimen name="message_item_avatar_on_right_text_indent">56dip</dimen>
+    <dimen name="message_item_text_padding_left_right">14dip</dimen>
+    <dimen name="message_item_text_padding_left">16dip</dimen>
+    <dimen name="message_item_text_padding_right">20dip</dimen>
+    <dimen name="message_item_text_padding_top">6dip</dimen>
+
+    <dimen name="avatar_width_height">72dip</dimen>
+
+    <dimen name="input_text_height">15dip</dimen><!--mody by xiashuaishuai-->
+    <dimen name="input_text_height_adjusted">9dip</dimen>
+    
+    <dimen name="mms_inline_attachment_size">200dip</dimen>
+
+    <dimen name="widget_margin_top">0dip</dimen>
+    <dimen name="widget_margin_left">0dip</dimen>
+    <dimen name="widget_margin_right">0dip</dimen>
+    <dimen name="widget_margin_bottom">7dip</dimen>
+    <!-- IpMessage -->
+    <dimen name="bottom_panel_min_height">43dip</dimen>
+    <dimen name="share_panel_lan_height">146dip</dimen>
+    <dimen name="share_panel_port_height">236dip</dimen>
+
+
+    <dimen name="emoticon_preview_width">180dip</dimen>
+    <dimen name="emoticon_preview_height">180dip</dimen>
+    <dimen name="emoticon_preview_land_offset">90dip</dimen>
+    <dimen name="emoticon_preview_port_offset">169dip</dimen>
+    <dimen name="emoticon_bound_size">23dip</dimen>
+    <dimen name="shortcut_bound_size">54dip</dimen>
+    <dimen name="img_minwidth">112dip</dimen>
+
+    <!-- For Ip Message -->
+    <dimen name="ipmsg_message_list_divier_height">11dip</dimen>
+
+    <!-- For Group Mms -->
+    <dimen name="group_photo_width">36dip</dimen>
+
+    <dimen name="share_panel_common_lan_height">99dip</dimen>
+    <dimen name="share_panel_common_port_height">180dip</dimen>
+    <dimen name="event_info_dialog_height">73dip</dimen>
+    <dimen name="event_info_dialog_width">202dip</dimen>
+    <!-- add by lzp -->
+    <dimen name="message_text_padding_left_right">9dip</dimen>
+    
+    <dimen name="common_view_height">30dip</dimen>
+    <dimen name="button_with_counter_width">67dip</dimen>
+</resources>

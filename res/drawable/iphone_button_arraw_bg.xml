@@ -1,0 +1,30 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+
+<!--        btn_default_normal-->
+   <item android:state_window_focused="false" android:state_enabled="true"
+        android:drawable="@drawable/iphone_button_arraw_bg_unpress" />
+
+<!--        btn_default_normal_disable-->
+   <item android:state_window_focused="false" android:state_enabled="false"
+        android:drawable="@drawable/iphone_button_arraw_bg_unpress" /> 
+
+<!--        btn_default_pressed-->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/iphone_button_arraw_bg_press" />
+
+<!--        btn_default_selected-->
+    <item android:state_focused="true" android:state_enabled="true"
+        android:drawable="@drawable/iphone_button_arraw_bg_press" />
+
+<!--        btn_default_normal-->
+    <item android:state_enabled="true"
+        android:drawable="@drawable/iphone_button_arraw_bg_unpress" />
+
+<!--        btn_default_normal_disable_focused-->
+    <item android:state_focused="true"
+        android:drawable="@drawable/iphone_button_arraw_bg_unpress" />
+        
+<!--        btn_default_normal_disable-->
+    <item android:drawable="@drawable/iphone_button_arraw_bg_unpress" />
+
+</selector> 

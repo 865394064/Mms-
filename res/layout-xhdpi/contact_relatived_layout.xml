@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="450dip"
+            android:background="#ffffff">
+            
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip">
+                    
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mms_details"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+                    
+                    <TextView 
+                        android:id="@+id/contact_detail_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/complete"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dip"
+                        android:clickable="true"
+			android:textColor="@drawable/complete_selector"/>
+                </RelativeLayout>
+                
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#C7C7CC"/>
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip">
+                    <ImageButton 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/contact_tab_icon_normal"/>
+                    <TextView 
+                        android:id="@+id/people_number_or_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="55dip"
+                        android:textColor="@android:color/black"/>
+                    
+                    <ImageButton 
+                        android:id="@+id/people_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dip"
+                        android:background="@drawable/mms_send_bg"/>
+                    
+                    <ImageButton 
+                        android:id="@+id/call_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/call_people_bg"/>
+                    
+                </RelativeLayout>
+                
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#C7C7CC"/>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="23dip"
+                    android:background="#EFEFF4"/>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="78dip"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/icloud_bg"
+                        android:orientation="vertical">
+                        
+                      <TextView 
+                            android:layout_width="match_parent"
+                            android:layout_height="39dip"
+                            android:text="@string/icloud_maile"
+                            android:maxLines="1"
+                            android:textColor="#007aff"
+                            android:gravity="center_vertical"/>
+                        <TextView 
+                            android:layout_width="match_parent"
+                            android:layout_height="39dip"
+                            android:text="@string/icloud_required"
+                            android:maxLines="1"
+                            android:textColor="#007aff"
+                            android:gravity="center_vertical"/>
+                        
+                    </LinearLayout>
+                </RelativeLayout>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#C7C7CC"/>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:background="#EFEFF4">
+                    
+                  <!--  <TextView 
+                        android:id="@+id/icloud_forget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icloud_forget"
+                        android:textColor="#6f6f6f"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dip"
+                        android:textSize="12sp"/>
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icloud_for"
+                        android:textColor="#007aff"
+                        android:layout_centerInParent="true"
+                        android:layout_toRightOf="@id/icloud_forget"
+                        android:textSize="12sp"/>-->
+                    
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="36dip">
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/icloud_land"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="20dip"/>
+                    
+                     <com.hskj.iphone.view.CheckboxView
+				android:id="@+id/allow_repeat_call" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true" 
+				android:layout_marginRight="20dip"/>
+                </RelativeLayout>
+                
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="25dip"
+                    android:background="#EFEFF4"/>
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    
+                    <Button 
+                        android:id="@+id/photo_left_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dip"
+                        android:text="@string/mms_image"
+                        android:textColor="#ffffff"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dip"
+                        android:textSize="12sp"
+			    android:background="@drawable/img_selected"
+                        />
+                    
+                    <Button 
+                        android:id="@+id/attach_right_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dip"
+                        android:text="@string/mms_annex"
+                        android:textColor="#007aff"
+                        android:background="@drawable/annex_unselect"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dip"
+                        android:textSize="12sp"
+                        />
+                    
+                </RelativeLayout>
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2008 Esmertec AG.
+ * Copyright (C) 2008 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/conversation_listview_main"
+    android:layout_height="match_parent"  
+    android:orientation="vertical">
+    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+    android:background="@android:drawable/header_bg" 
+    android:id="@+id/top_control">
+        <Button 
+					android:id="@+id/btn_iphonesms_smslist_button_edit" 
+                    android:background="@android:color/transparent"
+					android:layout_width="wrap_content" 
+					android:layout_height="38dip"
+					android:text="@string/btn_edit" 
+					android:gravity="center"
+					android:textSize="15dip"
+					android:paddingLeft="11dip"
+					android:paddingRight="11dip"
+					android:textColor="@drawable/iphone_btn_blue_color"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"/>
+        		<LinearLayout 
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_centerInParent="true">
+        		    <TextView  
+						android:id="@+id/text_iphonesms_smslist_sms"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Header_TextView_Style" 
+						android:text="@string/sms" />
+					<TextView android:id="@+id/text_iphonesms_unread_count"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						style="@style/Header_TextView_Style"/>
+        		</LinearLayout>
+				
+				<ImageView 
+					android:id="@+id/btn_iphonesms_smslist_button_new" 
+					android:src="@drawable/iphone_button_handwrite_bg"
+					android:background="@null"
+					android:layout_width="wrap_content" 
+					android:layout_height="38dip"
+					android:layout_centerVertical="true" 
+					android:paddingRight="11dip"
+					android:paddingLeft="11dip"
+					android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout
+    android:layout_below="@id/top_control"
+	android:id="@+id/iphonesms_smslist_framelayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    <ListView android:id="@android:id/list"
+        style="?android:attr/listViewWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="false"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@drawable/iphonedivider_gray"
+        android:listSelector="@android:color/transparent"
+        android:fadingEdgeLength="18dip" />
+    <TextView
+        android:id="@+id/mms_list_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_messages"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?android:attr/textColorSecondary"
+        android:visibility="gone"/>
+   	</FrameLayout>
+	<com.android.mms.sms.SmsListViewAlpha
+		    	android:id="@+id/iphonesms_smslist_textview" 
+		    	android:visibility="gone"
+		    	android:layout_alignParentBottom="true"
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dip"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/copy_bg"
+        android:gravity="center"
+        android:textSize="14dip"
+        android:text="@string/copy"
+        android:textColor="#ffffff" />
+
+    <View
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/more_bg"
+        android:gravity="center"
+        android:text="@string/more"
+        android:textSize="14dip"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/more_2"
+        android:layout_width="50dip"
+        android:layout_height="fill_parent"
+        android:padding="0dip"
+        android:background="@drawable/more_bg_2"
+        android:gravity="center"
+        android:text="@string/more"
+        android:textSize="14dip"
+        android:textColor="#ffffff" 
+        android:visibility="gone"/><!--added by wangyouyou-->
+</LinearLayout>

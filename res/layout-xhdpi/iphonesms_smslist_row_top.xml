@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/Iphone_search_bar"
+    android:orientation="vertical"
+    android:background="@color/search_bar_bg"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+        <LinearLayout
+    android:id="@+id/ipad_search_topview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+	android:gravity="center_vertical" 
+    >  
+	<SearchView 
+	android:id="@+id/iphone_search_view"
+    	android:layout_width="0dip"
+    	android:layout_weight="7"
+    	android:textColorHint="#c9c9c9"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+	android:layout_centerVertical="true"
+		android:imeOptions="flagNoExtractUi|flagNoFullscreen"
+    	/>
+	<Button 
+		android:id="@+id/btn_iphonesms_smslist_cancel_search" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@android:color/transparent"
+		android:textColor="@drawable/iphone_btn_blue_color"
+		android:text="@string/btn_cancel" 
+		android:textSize="14dip"
+		android:visibility="gone"
+		android:layout_marginRight="10dip"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:gravity="center"
+		android:singleLine="true"/>         
+         </LinearLayout>
+    <LinearLayout
+    android:id="@+id/searviewbar_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+    android:background="@android:color/black"
+    android:alpha="0.2"
+    android:visibility="gone"
+    > 
+    </LinearLayout>
+    </FrameLayout>
+        
+</RelativeLayout>
